@@ -7,6 +7,8 @@ class TestCase extends IntegrationTest {
 
 	use DatabaseTransactions;
 
+	protected $baseUrl = 'http://localhost';	
+
 	/**
 	 * Creates the application.
 	 *

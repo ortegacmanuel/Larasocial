@@ -42,7 +42,7 @@ class LogoutUserCommand extends Command implements SelfHandling {
 		$this->user->updateOnlineStatus(0);
 		$friendsUserIds = $this->user->friends()->where('onlinestatus', 1)->lists('requester_id');
 		$relatedToId = $this->user->id;
-		$this->socketClient->updateChatStatusBar($friendsUserIds, 22, $relatedToId, false);
+		//$this->socketClient->updateChatStatusBar($friendsUserIds, 22, $relatedToId, false);
 		Auth::logout();
 
 		return Auth::check();

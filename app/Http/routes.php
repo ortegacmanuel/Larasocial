@@ -12,7 +12,7 @@ Route::post('/', ['as' => 'registration_path', 'uses' => 'RegistrationController
  */
 Route::post('login', ['as' => 'login_path', 'uses' => 'SessionController@store']);
 
-Route::delete('logout', ['as' => 'logout_path', 'uses' => 'SessionController@destroy']);
+Route::get('logout', ['as' => 'logout_path', 'uses' => 'SessionController@destroy']);
 
 
 /**

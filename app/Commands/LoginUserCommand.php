@@ -50,8 +50,8 @@ class LoginUserCommand extends Command implements SelfHandling {
 		$relatedToId = $user->id;
  		$clientCode = 22;
  		$message = true;
-		$this->socketClient->updateChatStatusBar($friendsUserIds, $clientCode, $relatedToId, $message);
-		$user->updateOnlineStatus(1);
+		//$this->socketClient->updateChatStatusBar($friendsUserIds, $clientCode, $relatedToId, $message);
+		//$user->updateOnlineStatus(1);
 		
 		return true;
 	}
